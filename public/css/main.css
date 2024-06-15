@@ -1,0 +1,40 @@
+/*
+  This section is reserved for user customizations. 
+  Feel free to modify or remove these styles as needed. 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    min-height: 100svh;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 4rem;
+    scale: 0.5;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: comeToScreen 0.5s ease-in-out forwards;
+    user-select: none;
+    pointer-events: none;
+}
+@keyframes comeToScreen {
+    to {
+        scale: 1;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

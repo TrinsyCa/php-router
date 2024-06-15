@@ -1,0 +1,22 @@
+{
+    "name": "trinsyca/php-router",
+    "description": "A simple PHP routing framework.",
+    "type": "project",
+    "keywords": ["Php Router"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ömer İslamoğlu",
+            "email": "omer@trinsyca.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TrinsyCa\\PhpRouter\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

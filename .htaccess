@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect for the specific URL
+RewriteCond %{REQUEST_URI} ^/p/php-router/$
+RewriteRule ^$ settings/routes.php [L]
+
+# Redirect all other requests to routes/routes.php if the file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ settings/routes.php [L,QSA]

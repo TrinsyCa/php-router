@@ -1,0 +1,12 @@
+<?php
+
+$command = $argv[1] ?? null;
+
+$commandTitle = "Trinsy > ";
+
+if ($command === 'make:htaccess') {
+    require 'settings/generate_htaccess.php';
+    echo $commandTitle . ".htaccess file has been generated successfully.\n";
+} else {
+    echo $commandTitle . "Invalid command.\n";
+}
