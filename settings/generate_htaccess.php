@@ -19,8 +19,10 @@ if (!isset($AppName) || !isset($Directory)) {
 }
 
 // Ensure the base directory has a trailing slash
-if (substr($Directory, -1) !== '/') {
-    $Directory .= "/";
+if(!empty($Directory)) {
+    if (substr($Directory, -1) !== '/') {
+        $Directory .= "/";
+    }
 }
 
 // Define the .htaccess content
