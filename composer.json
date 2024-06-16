@@ -2,7 +2,7 @@
     "name": "trinsyca/php-router",
     "description": "A simple PHP routing framework.",
     "type": "project",
-    "keywords": ["Php Router"],
+    "keywords": ["php", "router", "framework"],
     "license": "MIT",
     "authors": [
         {
