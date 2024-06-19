@@ -2,10 +2,15 @@
 
 $command = $argv[1] ?? null;
 
-$commandTitle = "Trinsy > ";
+$commandTitle = "Trinsy >>> ";
 
 if ($command === 'make:htaccess') {
+    ob_start();
+    
     require 'settings/generate_htaccess.php';
+    
+    ob_end_clean();
+
     echo $commandTitle . ".htaccess file has been generated successfully.\n";
 } else {
     echo $commandTitle . "Invalid command.\n";
