@@ -2,7 +2,7 @@
 
 $command = $argv[1] ?? null;
 
-$commandTitle = "Trinsy >>> ";
+$commandTitle = "\nTrinsy >>> ";
 
 if ($command === 'make:htaccess') {
     ob_start();
