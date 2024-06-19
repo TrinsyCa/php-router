@@ -9,7 +9,7 @@ To set up the PHP Router project, follow these steps:
 1. **Create the Project**:
 
     ```sh
-    composer create-project trinsyca/php-router keepofpass
+    composer create-project trinsyca/php-router example-app
     ```
 
 2. **Install Dependencies**:
@@ -20,10 +20,9 @@ To set up the PHP Router project, follow these steps:
 
 ## Configuration
 
-Before using the router, configure your environment settings in the `.env` file.
+After changing the name of the project file, 
+make sure to fill in the `APP_NAME` and `DIRECTORY` data in the `.env` file 
+and run the following command:
 
-### .env
-
-```php
-APP_NAME=php-router
-DIRECTORY=p
+```sh
+php trinsy make:htaccess
